@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises: Variables</title>
+</head>
+<body>
+    <!-- Why pay a fortune teller when you can just program your fortune yourself?
+
+Store the following into variables: number of children, partner's name, geographic location, job title.
+Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids." -->
+
+<script>
+
+    // The Fortune Teller
+    var number_of_children = 7;
+    var partners_name = "X";
+    var geographic_location = "Skopje";
+    var job_title = "CEO Partner";
+
+    console.log (" You will be a "+ job_title + " In " + geographic_location + " and married to " + partners_name + " with " + number_of_children + " kids ")
+
+
+    // The Age Calculator
+
+    var birth_year = 1981;
+    var future_year = 2075;
+    // var age = future_year - birth_year;
+
+    console.log ("I will be " + (future_year-birth_year)+" In the year "+ future_year);
+
+        // The Lifetime Supply Calculator
+        //     Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
+
+        // Store your current age into a variable.
+        // Store a maximum age into a variable.
+        // Store an estimated amount per day (as a number).
+        // Calculate how many you would eat total for the rest of your life.
+        // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
+
+        var current_age = 10;
+        var maximum_age = 100;
+        var need_per_day = 3;
+        var total_needed = (need_per_day*365) * (maximum_age - current_age);
+        
+
+        console.log(" You will need " + total_needed + " chocolate bars to last until the ripe old age of " + maximum_age)
+
+        //         The Geometrizer
+        // Calculate properties of a circle, using the definitions here.
+
+        // Store a radius into a variable.
+        // Calculate the circumference based on the radius, and output "The circumference is NN".
+        // Calculate the area based on the radius, and output "The area is NN".
+
+
+
+        var radius_of_circle = 5;
+        var PI = 3.14
+        var circumference = PI*2*radius_of_circle
+
+        console.log ( " The circumference is " + circumference)
+
+        var area_on_radius = PI*radius_of_circle*radius_of_circle
+      
+        console.log ( " The area is "+ area_on_radius);
+
+
+
+        //         The Temperature Converter
+        // It's hot out! Let's make a converter based on the steps here.
+
+        // Store a celsius temperature into a variable.
+        // Convert it to fahrenheit and output "NN°C is NN°F".
+        // Now store a fahrenheit temperature into a variable.
+        // Convert it to celsius and output "NN°F is NN°C."
+
+        var celsius_temp = 36.8
+        var celsius_form =(celsius_temp*9)/5+32;
+
+        console.log ( celsius_temp + " C is " + celsius_form + "F");
+
+        var fahrenheit_temp = 110;
+        var fahrenheit_form = (( fahrenheit_temp - 32 )*5)/9;
+
+        console.log (fahrenheit_temp + " F is " + fahrenheit_form + " C ");
+
+</script>
+
+</body>
+</html>
